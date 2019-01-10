@@ -1,0 +1,49 @@
+{
+  "connection": "default",
+  "collectionName": "course",
+  "info": {
+    "name": "course",
+    "description": "Cursos e eventos Orto Conecta."
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "default": "",
+      "type": "string",
+      "required": true
+    },
+    "course_image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    },
+    "sold_out": {
+      "default": false,
+      "type": "boolean",
+      "required": true
+    },
+    "price": {
+      "default": "",
+      "type": "string",
+      "required": true
+    },
+    "local": {
+      "default": "",
+      "type": "string",
+      "required": true
+    },
+    "date_event": {
+      "default": "",
+      "type": "string",
+      "required": true
+    },
+    "author": {
+      "default": "",
+      "type": "string",
+      "required": true
+    }
+  }
+}
